@@ -30,16 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'plushabeststyle@gmail.com';
-        $mail->Password = 'uhfg eyhj urqx firo';
+        $mail->Username = '#;
+        $mail->Password = '#';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        // Recipients
         $mail->setFrom('plushabeststyle@gmail.com', 'Your Website');
         $mail->addAddress('plushabeststyle@gmail.com', 'Recipient Name');
 
-        // Content
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission';
         $mail->Body = "<h2>Contact Form Submission</h2>
