@@ -45,7 +45,6 @@ function validateFormInput() {
         email.classList.add('is-valid');
     }
 
-    // const phoneRegex = /^\d+$/;
     if (phone.value.trim() === "") {
         document.getElementById("phoneError").classList.remove("d-none");
         phone.classList.add('is-invalid');
